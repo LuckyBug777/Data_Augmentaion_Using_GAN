@@ -37,7 +37,7 @@ nz = 128  # Updated to match the training configuration
 netG = Generator(nz).to(device)
 
 # Load the generator model
-netG.load_state_dict(torch.load('generator1.pth'))
+netG.load_state_dict(torch.load('generator_final.pth'))
 netG.eval()
 
 # Create a directory to save generated images
